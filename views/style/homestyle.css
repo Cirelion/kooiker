@@ -57,6 +57,7 @@ body .body .navigation ul li {
   border-bottom: 3px solid #5b0100;
   height: 100%;
   display: table-cell;
+  transition: .2s linear;
 }
 body .body .navigation ul li a {
   text-align: center;
@@ -66,6 +67,7 @@ body .body .navigation ul li a {
   color: white;
   font-weight: bold;
   font-size: 18px;
+  transition: .2s linear;
 }
 body .body .navigation ul li:last-child {
   padding-right: 25px;
@@ -73,7 +75,7 @@ body .body .navigation ul li:last-child {
 }
 body .body .navigation ul li:hover,
 body .body .navigation ul li.active {
-  background-color: #420100;
+  background-color: #640200;
   transition: .2s linear;
 }
 body .body .navigation ul li:hover a,
