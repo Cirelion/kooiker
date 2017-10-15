@@ -6,6 +6,7 @@
             <link href="{{ asset('vendor/twbs/bootstrap/dist/css/bootstrap-theme.css') }}" type="text/css"
                   rel="stylesheet">
             <link href="{{ asset('views/style/homestyle.css') }}" type="text/css" rel="stylesheet">
+            <link href="{{ asset('views/style/fa/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
         {% endblock %}
     </head>
 {% endblock %}
@@ -15,45 +16,72 @@
 
 </div>
 <div class="header container ">
-    <div class="col-xs-10 col-centered">
-        <div class="header-image">
+    <div class="row">
+        <div class="col-xs-10 col-centered">
+            <div class="header-image">
+            </div>
         </div>
     </div>
 </div>
 
 <div class="body container">
-    <div class="col-xs-10 col-centered">
-        <div class="body-background-holder">
-            <img class="body-background" src="{{ asset('/views/images/body-background.jpg') }}">
+    <div class="row">
+        <div class="col-xs-10 col-centered">
+            <div class="body-background-holder">
+                <img class="body-background" src="{{ asset('/views/images/body-background.jpg') }}">
+            </div>
         </div>
-    </div>
-    <div class="col-xs-10 col-centered">
-        <div class="header-seperator">
+        <div class="col-xs-10 col-centered">
+            <div class="header-seperator">
+            </div>
         </div>
-    </div>
 
-    <div class="col-xs-10 col-centered">
-        <div class="navigation">
-            <ul>
-                <li class="page-link active"><a href="#"> Home</a></li>
-                <li class="page-link"><a href="#"> Albert Heijn actie</a></li>
-                <li class="page-link"><a href="#"> Menu's</a></li>
-                <li class="page-link"><a href="#"> Contact</a></li>
-                <li class="page-link"><a href="#"> Gastenboek</a></li>
-                <li class="page-link"><a href="#"> Fotoalbum</a></li>
-            </ul>
+        <div class="col-xs-10 col-centered">
+            <div class="navigation">
+                <ul>
+                    <li class="page-link active"><a href="#"> Home</a></li>
+                    <li class="page-link"><a href="#"> Albert Heijn actie</a></li>
+                    <li class="page-link"><a href="#"> Menu's</a></li>
+                    <li class="page-link"><a href="#"> Contact</a></li>
+                    <li class="page-link"><a href="#"> Gastenboek</a></li>
+                    <li class="page-link"><a href="#"> Fotoalbum</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-
 </div>
 
-<div class="container-fluid content">
+<div class="container content">
 
     {% block content %}
 
     {% endblock %}
 
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="footer">
+
+            <div class="col-xs-12">
+                <div class="footer-title">
+                    <h4>
+                                <span class="title-text">
+                                    Contact
+                                </span>
+                        <a href="https://www.facebook.com/EetcafeDeKooiker/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </h4>
+                </div>
+
+                <div class="footer-content">
+                    Kooikersgracht 9, 3831NG Leusden, Nederland<br>
+                    033-4325200<br>
+                    <br>
+                    Door Myron van Leuveren voor Eetcafé de Kooiker
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 
@@ -63,20 +91,7 @@
         {% block javascripts %}
             <script src="{{ asset('vendor/components/jquery/jquery.min.js') }}"></script>
             <script src="{{ asset('vendor/nnnick/chartjs/dist/Chart.min.js') }}"></script>
-
             <script src="{{ asset('vendor/twbs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-
-            <script>
-                $("*").each(function () {
-                    var $this = $(this);
-
-                    if ($this.is("p" && window.screen.width < 1000)) {
-                        $this.css({"font-size": "200%"});
-                    }
-                });
-            </script>
         {% endblock %}
     </footer>
-
 {% endblock %}
-</div>

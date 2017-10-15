@@ -2,28 +2,35 @@
   padding: 0 !important;
 }
 
+.content-centered {
+  text-align: center;
+}
+
 .col-centered {
   margin: 0 auto;
   float: none;
 }
 
 body {
-.body-background-holder {
-  position: relative;
+  .body-background-holder {
+    position: relative;
 
-  .body-background {
-    border: 3px solid black;
-    border-top: 0;
-    border-bottom: 0;
-    width: 100%;
-    left: 0;
-    right: 0;
-    position: absolute;
-    height: 100vh;
-    margin: 0 auto;
-    float: none;
+    .body-background {
+      border: 3px solid black;
+      border-top: 0;
+      border-bottom: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: calc(124vh);
+      margin: 0 auto;
+      float: none;
+    }
   }
-}
+
+  //header
+
   .header {
     .header-image {
       background-image: url("../images/site-header-image.png");
@@ -31,6 +38,8 @@ body {
       background-size: contain;
     }
   }
+
+  //body
 
   .body {
     .header-seperator {
@@ -46,7 +55,7 @@ body {
         margin-top: -3px;
         list-style-type: none;
         width: 100%;
-        display:table;
+        display: table;
         padding: 0;
         height: 40px;
         margin-bottom: 0;
@@ -64,9 +73,7 @@ body {
           border-top: 3px solid #5b0100;
           border-bottom: 3px solid #5b0100;
           height: 100%;
-          box-sizing: border-box;
           display: table-cell;
-          vertical-align: middle;
         }
         li:last-child {
           padding-right: 25px;
@@ -84,13 +91,70 @@ body {
         }
       }
     }
+
     background-color: transparent;
   }
 
+//content
+
   .content {
-    p {
-      min-font-size: 15px;
+    .content-block {
+      .content-text {
+        p {
+          color: white;
+          font-size: 24px;
+        }
+      }
+      padding-top: 30px;
     }
+    .image-block {
+      .image-holder {
+        padding: 0;
+        width: 100%;
+        display: table;
+        border-spacing: 25px;
+        .content-image {
+          height: 300px;
+          display: table-cell;
+          border-radius: 50px;
+        }
+
+      }
+    }
+  }
+
+  //footer
+
+  .footer {
+    position: relative;
+    z-index: 50;
+    .row {
+      margin-top: -4px;
+    }
+    .footer-title {
+      a {
+        color: white;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      .title-text {
+        padding-right: 25px;
+      }
+      color: white;
+      text-align: center;
+    }
+    .footer-content {
+      padding-bottom: 15px;
+      color: white;
+      text-align: center;
+    }
+    border-width: 4px 0;
+    border-style: double;
+    border-color: #93701F;
+    height: 150px;
+    background-color: #5C0202;
+    margin-bottom: 150px;
   }
   background-image: url("../images/site-background.png");
 }
