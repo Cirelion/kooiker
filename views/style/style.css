@@ -1,0 +1,48 @@
+.no-padding {
+  padding: 0 !important;
+}
+.header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 0 !important;
+  height: 50px;
+  background-color: #5b0100;
+}
+.header .navigation {
+  padding-top: 12px;
+}
+.header .navigation li {
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: middle;
+}
+.header .navigation li a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.header .header-welcome {
+  background-color: transparent;
+  border: 0;
+  padding-top: 12px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.header .user-info {
+  bottom: 0;
+  padding: 0;
+  border-left: 1px solid white;
+  height: 100%;
+}
+.header .user-info a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content p {
+  min-font-size: 15px;
+}

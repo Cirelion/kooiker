@@ -1,0 +1,77 @@
+{% block head %}
+    <head>
+        {% block stylesheets %}
+            <link href="{{ asset('views/style/style.css') }}" type="text/css" rel="stylesheet">
+            <link href="{{ asset('vendor/twbs/bootstrap/dist/css/bootstrap.css') }}" type="text/css" rel="stylesheet">
+            <link href="{{ asset('vendor/twbs/bootstrap/dist/css/bootstrap-theme.css') }}" type="text/css"
+                  rel="stylesheet">
+        {% endblock %}
+    </head>
+{% endblock %}
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-xs-12" style="padding: 0">
+            <div class="header container-fluid">
+                <div class="col-xs-10">
+                    <div class="navigation">
+                        <ul>
+                            <li class="page-link"><a href="{{ path('cms.home') }}"> Page_1</a></li>
+                            <li class="page-link"><a href="#"> Page_2</a></li>
+                            <li class="page-link"><a href="#"> Page_3</a></li>
+                            <li class="page-link"><a href="#"> Page_4</a></li>
+                            <li class="page-link"><a href="#"> Page_5</a></li>
+                            <li class="page-link"><a href="#"> Page_6</a></li>
+                            <li class="page-link"><a href="#"> Page_7</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-2 user-info">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle header-welcome" type="button" data-toggle="dropdown">
+                            Welkom User!<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="user-edit-link"><a href="{{ path('cms.editAccount') }}">Edit account</a>
+                            </li>
+                            <li class="user-logout"><a href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid content">
+
+                {% block content %}
+
+                {% endblock %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+{% block footer %}
+    <footer>
+        {% block javascripts %}
+            <script src="{{ asset('vendor/components/jquery/jquery.min.js') }}"></script>
+            <script src="{{ asset('vendor/nnnick/chartjs/dist/Chart.min.js') }}"></script>
+
+            <script src="{{ asset('vendor/twbs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+
+            <script>
+                $("*").each(function () {
+                    var $this = $(this);
+
+                    if ($this.is("p" && window.screen.width < 1000)) {
+                        $this.css({"font-size": "200%"});
+                    }
+                });
+            </script>
+        {% endblock %}
+    </footer>
+
+{% endblock %}

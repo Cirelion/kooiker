@@ -1,0 +1,22 @@
+{
+  "require": {
+    "components/jquery": "^3.0",
+    "twbs/bootstrap": "^3.3",
+    "silex/silex": "^2.2",
+    "symfony/asset": "^3.3",
+    "symfony/twig-bridge": "^3.2",
+    "doctrine/dbal": "^2.5",
+    "symfony/form": "^3.2",
+    "symfony/validator": "^3.2",
+    "symfony/config": "^3.2",
+    "symfony/translation": "^3.2",
+    "intervention/image": "^2.3",
+    "nnnick/chartjs": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "src/controllers/",
+      "Providers\\": "src/providers/"
+    }
+  }
+}
