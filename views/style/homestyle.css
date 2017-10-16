@@ -93,8 +93,9 @@ body #main-wrapper .content-title {
   padding-top: 25px;
 }
 body #main-wrapper .content-title p {
+  font-family: 'Alex Brush', cursive;
   color: white;
-  font-size: 30px;
+  font-size: 45px;
 }
 body #main-wrapper .image-block {
   padding-bottom: 50px;
