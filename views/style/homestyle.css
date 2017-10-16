@@ -81,21 +81,48 @@ body #main-wrapper .body .navigation ul li.active a {
   color: dimgrey;
   transition: .2s linear;
 }
-body #main-wrapper .content-text {
+body #main-wrapper .content-block {
+  margin: 0;
+}
+body #main-wrapper .content-block .content-text {
   padding-top: 25px;
 }
-body #main-wrapper .content-text p {
+body #main-wrapper .content-block .content-text p {
   font-family: 'Patrick Hand', cursive;
   color: white;
   font-size: 30px;
 }
-body #main-wrapper .content-title {
+body #main-wrapper .content-block .content-title {
   padding-top: 25px;
 }
-body #main-wrapper .content-title p {
+body #main-wrapper .content-block .content-title p {
   font-family: 'Alex Brush', cursive;
   color: white;
-  font-size: 45px;
+  font-size: 40px;
+}
+body #main-wrapper .content-block .content-time {
+  background-color: #5b0100;
+  padding: 15px;
+  border: 10px double white;
+  border-radius: 15px;
+}
+body #main-wrapper .content-block .content-time .row {
+  margin: 0;
+}
+body #main-wrapper .content-block .content-time span {
+  line-height: 1.2;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: 18px;
+}
+body #main-wrapper .content-block .content-time .time-hours {
+  float: right;
+}
+body #main-wrapper .content-block .time-description {
+  margin-top: 15px;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: 22px;
 }
 body #main-wrapper .image-block {
   padding-bottom: 50px;

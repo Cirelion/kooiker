@@ -1,12 +1,12 @@
 <div class="navigation">
     <ul>
         <li class="page-link
-{% if(active_page == 'home') %} active{% endif %}">
-            <a href="{{ path('home.home') }}"> Home</a>
+{% if(active_page == 'templates') %} active{% endif %}">
+            <a href="{{ path('templates.home') }}"> Home</a>
         </li>
         <li class="page-link
 {% if(active_page == 'ah') %} active{% endif %}">
-            <a href="{{ path('home.ah') }}"> Albert Heijn actie</a>
+            <a href="{{ path('templates.ah') }}"> Albert Heijn actie</a>
         </li>
         <li class="page-link
 {% if(active_page == 'menu') %} active{% endif %}">
@@ -14,7 +14,7 @@
         </li>
         <li class="page-link
 {% if(active_page == 'contact') %} active{% endif %}">
-            <a href="#"> Contact</a>
+            <a href="{{ path('templates.contact') }}"> Contact</a>
         </li>
         <li class="page-link
 {% if(active_page == 'gastenboek') %} active{% endif %}">

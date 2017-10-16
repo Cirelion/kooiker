@@ -30,7 +30,7 @@ class CmsController implements ControllerProviderInterface {
 		$this->app   = $app;
 		$controllers = $app['controllers_factory'];
 
-		$controllers->get( '/', array ( $this, 'getHomeItems' ) )->bind( 'cms.home' );
+		$controllers->get( '/', array ( $this, 'getHomeItems' ) )->bind( 'cms.templates' );
 		$controllers->get( '/account', array ( $this, 'getAccountSettings' ) )->bind( 'cms.editAccount' );
 
 		$controllers->before( array ( $this, 'setCmsProvider' ) );
@@ -39,7 +39,7 @@ class CmsController implements ControllerProviderInterface {
 	}
 
 	function getHomeItems() {
-		return $this->app['twig']->render( 'cms/home/ah.twig' );
+		return $this->app['twig']->render( 'cms/templates/ah.twig' );
 	}
 
 	function getAccountSettings() {

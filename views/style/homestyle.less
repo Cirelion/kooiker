@@ -91,20 +91,48 @@ body {
     }
 
     //content
-    .content-text {
-      padding-top: 25px;
-      p {
+    .content-block {
+      margin: 0;
+
+      .content-text {
+        padding-top: 25px;
+        p {
+          font-family: 'Patrick Hand', cursive;
+          color: white;
+          font-size: 30px;
+        }
+      }
+      .content-title {
+        padding-top: 25px;
+        p {
+          font-family: 'Alex Brush', cursive;
+          color: white;
+          font-size: 40px;
+        }
+      }
+      .content-time {
+        background-color: #5b0100;
+        padding: 15px;
+        border: 10px double white;
+        border-radius: 15px;
+        .row {
+          margin: 0;
+        }
+        span {
+          line-height: 1.2;
+          font-family: 'Patrick Hand', cursive;
+          color: white;
+          font-size: 18px;
+        }
+        .time-hours {
+          float: right;
+        }
+      }
+      .time-description {
+        margin-top: 15px;
         font-family: 'Patrick Hand', cursive;
         color: white;
-        font-size: 30px;
-      }
-    }
-    .content-title {
-      padding-top: 25px;
-      p {
-        font-family: 'Alex Brush', cursive;
-        color: white;
-        font-size: 45px;
+        font-size: 22px;
       }
     }
     .image-block {
@@ -143,13 +171,12 @@ body {
       }
       .title-text {
         font-family: 'Patrick Hand', cursive;
-        //padding-right: 25px;
       }
       color: white;
       text-align: center;
     }
     .footer-content {
-     font-size: 16px;
+      font-size: 16px;
       font-family: 'Patrick Hand', cursive;
       padding-bottom: 15px;
       color: white;
