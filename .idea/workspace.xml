@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de710503-eef7-432c-a1be-4e05e153705e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/home/templates/contact.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/home/ah/ah.twig" afterPath="$PROJECT_DIR$/views/home/templates/ah.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/home/home/home.twig" afterPath="$PROJECT_DIR$/views/home/templates/home.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/CmsController.php" afterPath="$PROJECT_DIR$/src/controllers/CmsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controllers/HomeController.php" afterPath="$PROJECT_DIR$/src/controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/cms/layout.twig" afterPath="$PROJECT_DIR$/views/cms/layout.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home/nav.twig" afterPath="$PROJECT_DIR$/views/home/nav.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home/templates/contact.twig" afterPath="$PROJECT_DIR$/views/home/templates/contact.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/style/homestyle.css" afterPath="$PROJECT_DIR$/views/style/homestyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/style/homestyle.less" afterPath="$PROJECT_DIR$/views/style/homestyle.less" />
     </list>
@@ -56,8 +50,8 @@
       <file leaf-file-name="homestyle.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/style/homestyle.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="131" column="25" lean-forward="false" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="25" />
+            <state relative-caret-position="385">
+              <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -105,6 +99,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="footer.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/home/footer.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="layout.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/home/layout.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,16 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="57" lean-forward="true" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/cms/layout.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -151,8 +145,8 @@
       <file leaf-file-name="contact.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/home/templates/contact.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+            <state relative-caret-position="680">
+              <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -167,6 +161,7 @@
       <find>position</find>
       <find>body-ba</find>
       <find>border</find>
+      <find>contact</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -385,12 +380,12 @@
       <workItem from="1508091353637" duration="4715000" />
       <workItem from="1508143180280" duration="2973000" />
       <workItem from="1508170812093" duration="1914000" />
-      <workItem from="1508184529645" duration="3005000" />
+      <workItem from="1508184529645" duration="7241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23311000" />
+    <option name="totallyTimeSpent" value="27547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
@@ -753,14 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/home/footer.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/cms/accountsettings.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -838,18 +825,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/home/footer.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/home/templates/contact.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+        <state relative-caret-position="680">
+          <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/style/homestyle.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="131" column="25" lean-forward="false" selection-start-line="131" selection-start-column="25" selection-end-line="131" selection-end-column="25" />
+        <state relative-caret-position="385">
+          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
           <folding />
         </state>
       </provider>

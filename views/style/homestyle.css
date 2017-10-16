@@ -102,7 +102,7 @@ body #main-wrapper .content-block .content-title p {
 }
 body #main-wrapper .content-block .content-time {
   background-color: #5b0100;
-  padding: 15px;
+  padding: 10px;
   border: 10px double white;
   border-radius: 15px;
 }
@@ -123,6 +123,24 @@ body #main-wrapper .content-block .time-description {
   font-family: 'Patrick Hand', cursive;
   color: white;
   font-size: 22px;
+}
+body #main-wrapper .contact-text p {
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: 22px;
+  line-height: 1;
+}
+body #main-wrapper .contact-text .icon-facebook {
+  color: #3b5998;
+  margin-left: 75px;
+}
+body #main-wrapper .contact-text .fa-stack-1x {
+  color: white;
+}
+body #main-wrapper .contact-map {
+  border-top: 8px solid #5b0100;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 body #main-wrapper .image-block {
   padding-bottom: 50px;
