@@ -39,7 +39,7 @@ class CmsController implements ControllerProviderInterface {
 	}
 
 	function getHomeItems() {
-		return $this->app['twig']->render( 'cms/home/home.twig' );
+		return $this->app['twig']->render( 'cms/home/ah.twig' );
 	}
 
 	function getAccountSettings() {

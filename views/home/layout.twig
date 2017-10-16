@@ -7,80 +7,50 @@
                   rel="stylesheet">
             <link href="{{ asset('views/style/homestyle.css') }}" type="text/css" rel="stylesheet">
             <link href="{{ asset('views/style/fa/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
         {% endblock %}
     </head>
 {% endblock %}
 
 <body>
-<div class="">
+<div id="main-wrapper">
+    <div class="wrapper container">
 
-</div>
-<div class="header container ">
-    <div class="row">
-        <div class="col-xs-10 col-centered">
-            <div class="header-image">
-            </div>
-        </div>
-    </div>
-</div>
+        <div class="row">
+            <div class="col-xs-10 col-centered">
+                <div class="body-background"
+                     style="background-image: url('{{ asset("/views/images/body-background.jpg") }}')">
+                    <div class="header">
+                        <div class="header-image">
+                        </div>
+                    </div>
 
-<div class="body container">
-    <div class="row">
-        <div class="col-xs-10 col-centered">
-            <div class="body-background-holder">
-                <img class="body-background" src="{{ asset('/views/images/body-background.jpg') }}">
-            </div>
-        </div>
-        <div class="col-xs-10 col-centered">
-            <div class="header-seperator">
-            </div>
-        </div>
 
-        <div class="col-xs-10 col-centered">
-            <div class="navigation">
-                <ul>
-                    <li class="page-link active"><a href="#"> Home</a></li>
-                    <li class="page-link"><a href="#"> Albert Heijn actie</a></li>
-                    <li class="page-link"><a href="#"> Menu's</a></li>
-                    <li class="page-link"><a href="#"> Contact</a></li>
-                    <li class="page-link"><a href="#"> Gastenboek</a></li>
-                    <li class="page-link"><a href="#"> Fotoalbum</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+                    <div class="body">
+                        <div class="body-background-holder">
 
-<div class="container content">
+                        </div>
+                        <div class="header-seperator">
+                        </div>
 
-    {% block content %}
+                        {% include('home/nav.twig') %}
 
-    {% endblock %}
+                    </div>
 
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="footer">
+                    <div class="content">
 
-            <div class="col-xs-12">
-                <div class="footer-title">
-                    <h4>
-                                <span class="title-text">
-                                    Contact
-                                </span>
-                        <a href="https://www.facebook.com/EetcafeDeKooiker/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </h4>
-                </div>
+                        {% block content %}
 
-                <div class="footer-content">
-                    Kooikersgracht 9, 3831NG Leusden, Nederland<br>
-                    033-4325200<br>
-                    <br>
-                    Door Myron van Leuveren voor Eetcafé de Kooiker
+                        {% endblock %}
+
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer-wrapper">
+        {% include('home/footer.twig') %}
+
     </div>
 </div>
 </body>

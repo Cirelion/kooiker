@@ -12,102 +12,102 @@
 }
 
 body {
-  .body-background-holder {
+  #main-wrapper {
+    padding: 0 0 100px;
     position: relative;
 
     .body-background {
+      min-height: 90%;
       border: 3px solid black;
       border-top: 0;
       border-bottom: 0;
-      width: 100%;
-      left: 0;
-      right: 0;
-      position: absolute;
-      margin: 0 auto;
-      float: none;
+      background-position: center;
+      background-size: cover;
     }
-  }
 
-  //header
+    //header
 
-  .header {
-    .header-image {
-      background-image: url("../images/site-header-image.png");
-      height: 200px;
-      background-size: contain;
+    .header {
+      .header-image {
+        background-image: url("../images/site-header-image.png");
+        height: 200px;
+        background-size: contain;
+      }
     }
-  }
 
-  //body
+    //body
 
-  .body {
-    .header-seperator {
-      height: 5px;
-    }
-    .navigation {
-      //background-color: black;
-      border-top: 3px solid #5b0100;
-      border-bottom: 3px solid #5b0100;
-      //padding: 12px 0;
-      height: 40px;
-      ul {
-        margin-top: -3px;
-        list-style-type: none;
-        width: 100%;
-        display: table;
-        padding: 0;
+    .body {
+      .header-seperator {
+        height: 5px;
+      }
+      .navigation {
+        border-top: 3px solid #5b0100;
+        border-bottom: 3px solid #5b0100;
         height: 40px;
-        margin-bottom: 0;
-        li {
-          a {
-            text-align: center;
-            list-style-type: none;
-            display: list-item;
-            margin-top: 5px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
+        ul {
+          margin-top: -3px;
+          list-style-type: none;
+          width: 100%;
+          display: table;
+          padding: 0;
+          height: 40px;
+          margin-bottom: 0;
+          li {
+            a {
+              font-family: 'Patrick Hand', cursive;
+              text-align: center;
+              list-style-type: none;
+              display: list-item;
+              color: white;
+              font-weight: bold;
+              font-size: 24px;
+              transition: .2s linear;
+            }
+            margin: -3px 0;
+            border-top: 3px solid #5b0100;
+            border-bottom: 3px solid #5b0100;
+            height: 100%;
+            display: table-cell;
             transition: .2s linear;
           }
-          margin: -3px 0;
-          border-top: 3px solid #5b0100;
-          border-bottom: 3px solid #5b0100;
-          height: 100%;
-          display: table-cell;
-          transition: .2s linear;
-        }
-        li:last-child {
-          padding-right: 25px;
-          width: auto;
-        }
-        li:hover, li.active {
-          background-color: #640200;
-          transition: .2s linear;
-          a {
-            text-decoration: none;
-            color: dimgrey;
+          li:last-child {
+            padding-right: 25px;
+            width: auto;
+          }
+          li:hover, li.active {
+            background-color: #640200;
             transition: .2s linear;
+            a {
+              text-decoration: none;
+              color: dimgrey;
+              transition: .2s linear;
+            }
           }
         }
       }
+
+      background-color: transparent;
     }
 
-    background-color: transparent;
-  }
-
-//content
-
-  .content {
-    .content-block {
-      .content-text {
-        p {
-          color: white;
-          font-size: 24px;
-        }
+    //content
+    .content-text {
+      padding-top: 25px;
+      p {
+        font-family: 'Patrick Hand', cursive;
+        color: white;
+        font-size: 30px;
       }
-      padding-top: 30px;
+    }
+    .content-title {
+      padding-top: 25px;
+      p {
+        color: white;
+        font-size: 30px;
+      }
     }
     .image-block {
+      padding-bottom: 50px;
       .image-holder {
         padding: 0;
         width: 100%;
@@ -124,14 +124,16 @@ body {
   }
 
   //footer
-
   .footer {
-    position: relative;
-    z-index: 50;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
     .row {
       margin-top: -4px;
     }
     .footer-title {
+
       a {
         color: white;
       }
@@ -139,12 +141,15 @@ body {
         text-decoration: none;
       }
       .title-text {
-        padding-right: 25px;
+        font-family: 'Patrick Hand', cursive;
+        //padding-right: 25px;
       }
       color: white;
       text-align: center;
     }
     .footer-content {
+     font-size: 16px;
+      font-family: 'Patrick Hand', cursive;
       padding-bottom: 15px;
       color: white;
       text-align: center;
@@ -154,7 +159,6 @@ body {
     border-color: #93701F;
     height: 150px;
     background-color: #5C0202;
-    margin-bottom: 50px;
   }
   background-image: url("../images/site-background.png");
 }

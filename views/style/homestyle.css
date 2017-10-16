@@ -11,37 +11,35 @@
 body {
   background-image: url("../images/site-background.png");
 }
-body .body-background-holder {
+body #main-wrapper {
+  padding: 0 0 100px;
   position: relative;
 }
-body .body-background-holder .body-background {
+body #main-wrapper .body-background {
+  min-height: 90%;
   border: 3px solid black;
   border-top: 0;
   border-bottom: 0;
-  width: 100%;
-  left: 0;
-  right: 0;
-  position: absolute;
-  margin: 0 auto;
-  float: none;
+  background-position: center;
+  background-size: cover;
 }
-body .header .header-image {
+body #main-wrapper .header .header-image {
   background-image: url("../images/site-header-image.png");
   height: 200px;
   background-size: contain;
 }
-body .body {
+body #main-wrapper .body {
   background-color: transparent;
 }
-body .body .header-seperator {
+body #main-wrapper .body .header-seperator {
   height: 5px;
 }
-body .body .navigation {
+body #main-wrapper .body .navigation {
   border-top: 3px solid #5b0100;
   border-bottom: 3px solid #5b0100;
   height: 40px;
 }
-body .body .navigation ul {
+body #main-wrapper .body .navigation ul {
   margin-top: -3px;
   list-style-type: none;
   width: 100%;
@@ -50,7 +48,7 @@ body .body .navigation ul {
   height: 40px;
   margin-bottom: 0;
 }
-body .body .navigation ul li {
+body #main-wrapper .body .navigation ul li {
   margin: -3px 0;
   border-top: 3px solid #5b0100;
   border-bottom: 3px solid #5b0100;
@@ -58,58 +56,70 @@ body .body .navigation ul li {
   display: table-cell;
   transition: .2s linear;
 }
-body .body .navigation ul li a {
+body #main-wrapper .body .navigation ul li a {
+  font-family: 'Patrick Hand', cursive;
   text-align: center;
   list-style-type: none;
   display: list-item;
-  margin-top: 5px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   transition: .2s linear;
 }
-body .body .navigation ul li:last-child {
+body #main-wrapper .body .navigation ul li:last-child {
   padding-right: 25px;
   width: auto;
 }
-body .body .navigation ul li:hover,
-body .body .navigation ul li.active {
+body #main-wrapper .body .navigation ul li:hover,
+body #main-wrapper .body .navigation ul li.active {
   background-color: #640200;
   transition: .2s linear;
 }
-body .body .navigation ul li:hover a,
-body .body .navigation ul li.active a {
+body #main-wrapper .body .navigation ul li:hover a,
+body #main-wrapper .body .navigation ul li.active a {
   text-decoration: none;
   color: dimgrey;
   transition: .2s linear;
 }
-body .content .content-block {
-  padding-top: 30px;
+body #main-wrapper .content-text {
+  padding-top: 25px;
 }
-body .content .content-block .content-text p {
+body #main-wrapper .content-text p {
+  font-family: 'Patrick Hand', cursive;
   color: white;
-  font-size: 24px;
+  font-size: 30px;
 }
-body .content .image-block .image-holder {
+body #main-wrapper .content-title {
+  padding-top: 25px;
+}
+body #main-wrapper .content-title p {
+  color: white;
+  font-size: 30px;
+}
+body #main-wrapper .image-block {
+  padding-bottom: 50px;
+}
+body #main-wrapper .image-block .image-holder {
   padding: 0;
   width: 100%;
   display: table;
   border-spacing: 25px;
 }
-body .content .image-block .image-holder .content-image {
+body #main-wrapper .image-block .image-holder .content-image {
   height: 300px;
   display: table-cell;
   border-radius: 50px;
 }
 body .footer {
-  position: relative;
-  z-index: 50;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
   border-width: 4px 0;
   border-style: double;
   border-color: #93701F;
   height: 150px;
   background-color: #5C0202;
-  margin-bottom: 50px;
 }
 body .footer .row {
   margin-top: -4px;
@@ -125,9 +135,11 @@ body .footer .footer-title a:hover {
   text-decoration: none;
 }
 body .footer .footer-title .title-text {
-  padding-right: 25px;
+  font-family: 'Patrick Hand', cursive;
 }
 body .footer .footer-content {
+  font-size: 16px;
+  font-family: 'Patrick Hand', cursive;
   padding-bottom: 15px;
   color: white;
   text-align: center;

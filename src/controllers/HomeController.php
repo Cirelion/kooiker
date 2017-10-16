@@ -31,6 +31,7 @@ class HomeController implements ControllerProviderInterface {
 		$controllers = $app['controllers_factory'];
 
 		$controllers->get( '/', array ( $this, 'getHomeItems' ) )->bind( 'home.home' );
+        $controllers->get( '/ah', array ( $this, 'getAhItems' ) )->bind( 'home.ah' );
 
 		$controllers->before( array ( $this, 'setHomeProvider' ) );
 
@@ -40,7 +41,9 @@ class HomeController implements ControllerProviderInterface {
 	function getHomeItems() {
 		return $this->app['twig']->render( 'home/home/home.twig' );
 	}
-
+    function getAhItems() {
+        return $this->app['twig']->render( 'home/ah/ah.twig' );
+    }
 	function setHomeProvider() {
 		/** @var HomeProvider $Home_Provider */
 		$this->Home_Provider = $this->app['HomeProvider'];
