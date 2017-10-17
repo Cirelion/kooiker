@@ -2,57 +2,58 @@
   padding: 0 !important;
 }
 
-.header {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  .navigation {
-    padding-top: 12px;
-    li {
-      a {
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
+.content-centered {
+  text-align: center;
+}
+
+.col-centered {
+  margin: 0 auto;
+  float: none;
+}
+
+body {
+
+  #main-wrapper {
+    padding: 0 0 100px;
+    position: relative;
+
+    .body-background {
+      min-height: 90%;
+      border: 3px solid black;
+      border-top: 0;
+      border-bottom: 0;
+      background-position: center;
+      background-size: cover;
+    }
+
+    //content
+    .content-block {
+      margin: 0;
+
+      .content-text {
+        padding-top: 25px;
+        p {
+          font-family: 'Patrick Hand', cursive;
+          color: white;
+          font-size: 30px;
+        }
       }
 
-      display: inline-block;
-      padding: 0 15px;
-      vertical-align: middle;
+      .content-title {
+        padding-top: 25px;
+        p {
+          font-family: 'Alex Brush', cursive;
+          color: white;
+          font-size: 40px;
+        }
+      }
     }
   }
-  padding: 0 !important;
-  height: 50px;
-  background-color: #5b0100;
-
-  .header-welcome {
-    background-color: transparent;
-    border: 0;
-    padding-top: 12px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-  }
-  .user-info {
-    bottom: 0;
-    padding: 0;
-
-    a {
-
-    }
-    a:hover {
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    border-left: 1px solid white;
-    height: 100%;
-  }
+  background-image: url("../images/site-background.png");
 }
-
-.content {
-  p {
-    min-font-size: 15px;
-  }
-}
+@import "home/contact.css";
+@import "home/footer.css";
+@import "home/header.css";
+@import "home/home.css";
+@import "home/nav.css";
+@import "home/time.css";

@@ -1,0 +1,8 @@
+.header .header-image {
+  background-image: url("../../images/site-header-image.png");
+  height: 200px;
+  background-size: contain;
+}
+.header-seperator {
+  height: 5px;
+}

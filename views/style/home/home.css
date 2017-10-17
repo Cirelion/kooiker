@@ -1,0 +1,14 @@
+.image-block {
+  padding-bottom: 50px;
+}
+.image-block .image-holder {
+  padding: 0;
+  width: 100%;
+  display: table;
+  border-spacing: 25px;
+}
+.image-block .image-holder .content-image {
+  height: 300px;
+  display: table-cell;
+  border-radius: 50px;
+}

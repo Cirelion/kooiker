@@ -1,0 +1,24 @@
+.content-time {
+  background-color: #5b0100;
+  padding: 10px;
+  border: 10px double white;
+  border-radius: 15px;
+}
+.content-time .row {
+  margin: 0;
+}
+.content-time span {
+  line-height: 1.2;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: 18px;
+}
+.content-time .time-hours {
+  float: right;
+}
+.time-description {
+  margin-top: 15px;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: 22px;
+}

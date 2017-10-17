@@ -1,48 +1,50 @@
+@import "home/contact.css";
+@import "home/footer.css";
+@import "home/header.css";
+@import "home/home.css";
+@import "home/nav.css";
+@import "home/time.css";
 .no-padding {
   padding: 0 !important;
 }
-.header {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  padding: 0 !important;
-  height: 50px;
-  background-color: #5b0100;
+.content-centered {
+  text-align: center;
 }
-.header .navigation {
-  padding-top: 12px;
+.col-centered {
+  margin: 0 auto;
+  float: none;
 }
-.header .navigation li {
-  display: inline-block;
-  padding: 0 15px;
-  vertical-align: middle;
+body {
+  background-image: url("../images/site-background.png");
 }
-.header .navigation li a {
+body #main-wrapper {
+  padding: 0 0 100px;
+  position: relative;
+}
+body #main-wrapper .body-background {
+  min-height: 90%;
+  border: 3px solid black;
+  border-top: 0;
+  border-bottom: 0;
+  background-position: center;
+  background-size: cover;
+}
+body #main-wrapper .content-block {
+  margin: 0;
+}
+body #main-wrapper .content-block .content-text {
+  padding-top: 25px;
+}
+body #main-wrapper .content-block .content-text p {
+  font-family: 'Patrick Hand', cursive;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
 }
-.header .header-welcome {
-  background-color: transparent;
-  border: 0;
-  padding-top: 12px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
+body #main-wrapper .content-block .content-title {
+  padding-top: 25px;
+}
+body #main-wrapper .content-block .content-title p {
+  font-family: 'Alex Brush', cursive;
   color: white;
-}
-.header .user-info {
-  bottom: 0;
-  padding: 0;
-  border-left: 1px solid white;
-  height: 100%;
-}
-.header .user-info a:hover {
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-.content p {
-  min-font-size: 15px;
+  font-size: 40px;
 }

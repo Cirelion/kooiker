@@ -1,0 +1,18 @@
+.contact-text p {
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  font-size: 22px;
+  line-height: 1;
+}
+.contact-text .icon-facebook {
+  color: #3b5998;
+  margin-left: 75px;
+}
+.contact-text .fa-stack-1x {
+  color: white;
+}
+.contact-map {
+  border-top: 8px solid #5b0100;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}

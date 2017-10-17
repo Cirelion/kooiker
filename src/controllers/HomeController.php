@@ -32,6 +32,7 @@ class HomeController implements ControllerProviderInterface {
 
 		$controllers->get( '/', array ( $this, 'getHomeItems' ) )->bind( 'templates.home' );
         $controllers->get( '/actie', array ( $this, 'getAhItems' ) )->bind( 'templates.ah' );
+        $controllers->get( '/menu', array ( $this, 'getMenuItems' ) )->bind( 'templates.menu' );
         $controllers->get( '/contact', array ( $this, 'getContactItems' ) )->bind( 'templates.contact' );
 
 		$controllers->before( array ( $this, 'setHomeProvider' ) );
@@ -44,6 +45,9 @@ class HomeController implements ControllerProviderInterface {
 	}
     function getAhItems() {
         return $this->app['twig']->render( 'home/templates/ah.twig' );
+    }
+    function getMenuItems() {
+        return $this->app['twig']->render( 'home/templates/menu.twig' );
     }
     function getContactItems() {
         return $this->app['twig']->render( 'home/templates/contact.twig' );

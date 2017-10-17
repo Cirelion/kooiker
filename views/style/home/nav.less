@@ -1,0 +1,45 @@
+.navigation {
+  border-top: 3px solid #5b0100;
+  border-bottom: 3px solid #5b0100;
+  height: 40px;
+  ul {
+    margin-top: -3px;
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    padding: 0;
+    height: 40px;
+    margin-bottom: 0;
+    li {
+      a {
+        font-family: 'Patrick Hand', cursive;
+        text-align: center;
+        list-style-type: none;
+        display: list-item;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        transition: .2s linear;
+      }
+      margin: -3px 0;
+      border-top: 3px solid #5b0100;
+      border-bottom: 3px solid #5b0100;
+      height: 100%;
+      display: table-cell;
+      transition: .2s linear;
+    }
+    li:last-child {
+      padding-right: 25px;
+      width: auto;
+    }
+    li:hover, li.active {
+      background-color: #640200;
+      transition: .2s linear;
+      a {
+        text-decoration: none;
+        color: dimgrey;
+        transition: .2s linear;
+      }
+    }
+  }
+}
